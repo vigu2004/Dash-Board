@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+
+main{
+    height: auto;
+    width: 100vw;
+    display: grid;
+    grid-template: repeat(5,1fr)/repeat(5,1fr);
+   
+}
+
+main > div{
+    background-color: peachpuff;
+    border: 1px black solid;
+}
+
+.dashboard{
+    grid-area: 1 / 1 / 6 / 2 ;
+    height: auto;
+}
+
+.navbar{
+    grid-area: 1 / 2 / 2 / 6;
+    height: 200px;
+}
+.project-announcement{
+    grid-area : 2/2/6/6;
+}
