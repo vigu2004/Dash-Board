@@ -1,6 +1,15 @@
 *{
     margin: 0%;
     padding: 0;
+    font-family: monstserrat,sans-serif;
+}
+/* 3AA6b9 blue
+    FF9Eaa dark pink
+    FFd0d0 light pink
+    F9f9e0 lighter pink */
+@font-face {
+    font-family: monstserrat;
+    src: url('Assets/Roboto/Roboto-Regular.ttf');
 }
 
 main{
@@ -16,9 +25,10 @@ main > div{
     border: 1px black solid;
 }
 
-.dashboard{
+.dashboard-area{
     grid-area: 1 / 1 / 6 / 2 ;
     height: auto;
+    background-color: #3aa6b9;
 }
 
 .navbar{
@@ -27,4 +37,41 @@ main > div{
 }
 .project-announcement{
     grid-area : 2/2/6/6;
+}
+
+.dashboard{
+    padding-top: 30px;
+    display: grid;
+    grid-template-rows: repeat(10,auto);
+    row-gap: 25px;
+    width: 100%;
+}
+.dashboard-icon{
+    height: 40px !important ;
+}
+.dashboard > span > div > img {
+    height: 25px;
+    filter: invert(1);
+    padding-left: 25px;  
+}
+
+.dashboard > span > div{
+    display: flex;
+}
+.dashboard  > span > div > p {
+    align-self: center;
+    padding-left: 15px;
+    color:antiquewhite;
+    font-size: 15px;
+}
+
+.second{
+    padding-top: 25px;
+}
+
+.third{
+    padding-top: 25px;
+}
+.ok{
+    font-size: 20px !important ;
 }
